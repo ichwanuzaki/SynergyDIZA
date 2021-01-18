@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+<!-- INI HEADER -->
+    <header>
+    </header>
+<!-- INI MAIN -->
+    <main>
+      <h1>FORMULIR PENDAFTARAN</h1>
+
+<table border="0" style="center; color:#000000">
+
+<tr>
+    <td>Nama Lengkap</td>
+    <td>:</td>
+    <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Nama Panggilan</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Jenis Kelamin</td>
+  <td>:</td>
+  <td>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </td>
+</tr>
+
+<tr>
+    <td>Tempat Lahir</td>
+    <td>:</td>
+    <td><input type="text"></td>
+</tr>
+
+<tr>
+    <td>Tanggal Lahir</td>
+    <td>:</td>
+    <td><input type="Date"></td>
+</tr>
+
+<tr>
+  <td>Agama</td>
+  <td>:</td>
+  <td>
+    <input type="radio" id="Islam" name="Agama" value="Islam">
+    <label for="Islam">Islam</label>
+    <input type="radio" id="Katholik" name="Agama" value="Katholik">
+    <label for="Katholik">Katholik</label>
+    <input type="radio" id="Kristen" name="Agama" value="Kristen">
+    <label for="Kristen">Kristen</label>
+    <input type="radio" id="Budha" name="Agama" value="Budha">
+    <label for="Budha">Budha</label>
+    <input type="radio" id="Hindu" name="Agama" value="Hindu">
+    <label for="Hindu">Hindu</label>
+</td>
+</tr>
+
+<tr>
+  <td>Kewarganegaraan</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Anak ke</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Jumlah Saudara</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Status</td>
+  <td>:</td>
+  <td>
+    <input type="radio" id="Kawin" name="Status" value="Kawin">
+    <label for="Kawin">Kawin</label>
+    <input type="radio" id="belumKawin" name="Status" value="belumKawin">
+    <label for="belumKawin">Belum Kawin</label>
+</td>
+</tr>
+
+<tr>
+  <td>Jenis SIM</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+    <td>Alamat Lengkap</td>
+    <td>:</td>
+    <td><textarea cols="22" rows="3" ></textarea></td>
+</tr>
+
+<tr>
+  <td>No. KTP</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>No. Tlp/HP</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Alamat Lain yang dapat dihubungi</td>
+  <td>:</td>
+  <td><textarea cols="22" rows="3" ></textarea></td>
+</tr>
+<tr>
+    <td>E-mail</td>
+    <td>:</td>
+    <td><input type="email"></td>
+</tr>
+
+<tr>
+  <td>No. Tlp/HP lain</td>
+  <td>:</td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="submit" value="Simpan"/>
+    <input type="reset" name="reset" value="Batal"/></td>
+</tr>
+</form>
+    </main>
+<!-- INI FOOTER -->
+    <footer>
+   </footer>
+  </body>
+</html>
