@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Lingkaran</title>
+  </head>
+  <body>
+<!-- INI HEADER -->
+    <header>
+    </header>
+<!-- INI MAIN -->
+    <main>
+      <p>Menghitung Luas Lingkaran</p>
+      <form name="hitungLuasLingkaran" method="post">
+        <table>
+          <tr>
+            <td>Jari2</td> 
+            <td>:</td>
+            <td><input type="number" name="jari2Lingkaran" value="0" onchange="hitungLuas();"></td>
+          </tr>
+          <tr>
+            <td>Luas</td>
+            <td>:</td>
+            <td><input type="text" name="luasLingkaran" onchange="hitungLuas();"></td>
+          </tr>
+          <input type="button" value="Hitung Sekarang" onClick="luaslingkaran()" /> 
+          <input type="reset" value="Reset" /> 
+        </table>   
+      </form>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+<!-- INI FOOTER -->
+    <footer>
+   </footer>
+  </body>
+</html>
