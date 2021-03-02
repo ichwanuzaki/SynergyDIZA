@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>Ketik nama hari kemudian output yang dihasilkan akan menjadi hari setelahnya</P>
+    <input id="myInput" type="text">
+    <button onclick="myFunction()">Click me!</button>
+    <p id="demo"></p>
+    
+<script>
+function myFunction() {
+    let text;
+    let days = document.getElementById("myInput").value;
+    let hari = days.toLowerCase();
+            
+    switch(hari) {
+    case "senin":
+    text = "selasa";
+    break;
+    case "selasa":
+    text = "rabu";
+    break;
+    case "rabu":
+    text = "kamis";
+    break;
+    case "kamis":
+    text = "jumat";
+    break;
+    case "jumat":
+    text = "sabtu";
+    break;
+    case "sabtu":
+    text = "minggu";
+    break;
+    case "minggu":
+    text = "senin";
+    break;      
+    default:
+    text = "Maaf itu bukan hari";
+    }
+    document.getElementById("demo").innerHTML = text;
+        }
+</script>
+</body>
+</html>

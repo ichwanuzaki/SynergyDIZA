@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deret Genap</title>
+</head>
+<body>
+    <h1>Generator angka genap</h1>
+    <p>Input angka!</p>
+    <input type="text" name="integer" id="positiveInteger">
+    <br><br>
+    <button type="button" name="button" onclick="myFunction()">Click</button>
+    <br><br>
+    Hasil:
+    <p id="evenNumbers"></p>
+    
+<script>
+function myFunction() {
+  var x, message;
+  x = document.getElementById("positiveInteger").value;
+
+  if (x == "") {
+    alert("Input kosong.");
+  } else if (isNaN(x)) {
+    alert("Input bukan angka.");
+  } else {
+    message = "";
+    for (i = 0; i <= x; i += 2) {
+      message += i + " ";
+    }
+    document.getElementById("evenNumbers").innerHTML = message;
+    }
+}
+</script>
+</body>
+</html>

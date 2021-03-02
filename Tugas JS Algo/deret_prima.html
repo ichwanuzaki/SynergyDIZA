@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deret Prima</title>
+</head>
+<body>
+    <h1>Generator angka prima</h1>
+    <p>Input angka!</p>
+    <input type="text" name="integer" id="positiveInteger">
+    <br><br>
+    <button type="button" name="button" onclick="myFunction()">Click</button>
+    <br><br>
+    Hasil:
+    <p id="primeNumbers"></p>
+    
+<script>
+function myFunction() {
+  var x, message;
+  x = document.getElementById("positiveInteger").value;
+
+  if (x == "") {
+    alert("Input kosong.");
+  } else if (isNaN(x)) {
+    alert("Input bukan angka.");
+  } else {
+    message = "";
+    for (i = 2; i <= x; i ++) {
+      let ketemu = false;
+      for (j = 2; j < i; j++){
+        if(i % j == 0) ketemu = true;
+      }
+      if(!ketemu){
+        message += i + " ";
+      }
+    }  
+    }
+    document.getElementById("primeNumbers").innerHTML = message;
+    }
+</script>
+</body>
+</html>
