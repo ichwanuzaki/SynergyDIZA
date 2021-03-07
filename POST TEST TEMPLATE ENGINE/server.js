@@ -1,0 +1,29 @@
+const express = require("express")
+const axios = require("axios")
+const app = express();
+
+app.set("view engine", "ejs")
+
+app.get("/", (req, res) => {
+  res.render("index", { title: "Homepage"})
+})
+
+app.get("/news", (req, res) => {
+  
+  const url = "https://berita-indo-api.vercel.app/v1";
+
+  
+  axios.get(`${url}/cnbc-news`)
+  .then(result => {
+    
+    res.render("news", { title: "Berita", news: result.data.data })
+  })
+})
+
+app.get("/corona", (req, res) => {
+  const url = "https://api.kawalcorona.com/indonesia/provinsi/";
+  axios.get(`${url}`)
+  .then(result => {
+    res.render("corona", { title: "Data Corona", corona: result.data})
+  })
+})
