@@ -1,17 +1,21 @@
 {
-  "dependencies": {
-    "axios": "^0.21.1",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  },
-  "name": "coba",
+  "name": "node",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
     "start": "nodemon server.js"
   },
-  "author": "",
+  "author": "DIMAS",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
