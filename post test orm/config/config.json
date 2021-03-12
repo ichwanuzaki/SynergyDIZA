@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "ichwanuzaki",
+    "password": "123164",
+    "database": "books",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "ichwanuzaki",
+    "password": "123164",
+    "database": "books",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "ichwanuzaki",
+    "password": "123164",
+    "database": "books",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
